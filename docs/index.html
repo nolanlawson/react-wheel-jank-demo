@@ -1,17 +1,28 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>React wheel jank demo</title>
-  </head>
-  <body>
-    Demo of React wheel jank caused by attaching a global <code>wheel</code> event listener
-    to the document, even when we only really need to liste on the <code>wheel</code> events
-    for an inner div.
 
-    <ul>
-      <li><a href="./1/">Version 1: No wheel events at all</a></li>
-      <li><a href="./2/">Version 2: React <code>onWheel</code> in the inner div</a></li>
-      <li><a href="./3/">Version 3: Actual <code>onwheel</code> event in the inner div</a></li>
-    </ul>
-  </body>
+<head>
+  <title>React wheel jank demo</title>
+  <style>
+    body {
+      font-family: Helvetica, Arial, "sans-serif";
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>React wheel jank demo</h1>
+  Demo of React wheel jank caused by attaching a global <code>wheel</code> event listener to the document, even when we only
+  really need to liste on the <code>wheel</code> events for an inner div.
+
+  <ul>
+    <li><a href="./1/">Version 1: No wheel events at all</a></li>
+    <li><a href="./2/">Version 2: React <code>onWheel</code> in the inner div</a></li>
+    <li><a href="./3/">Version 3: Actual <code>onwheel</code> event in the inner div</a></li>
+  </ul>
+</body>
+
 </html>
