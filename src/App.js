@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './App.css';
 import { times, noop } from 'lodash';
@@ -27,23 +28,27 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2>React Wheel Jank Demo</h2>
         </div>
+        <h3>Version 3</h3>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          In this version, we have an <code>onwheel</code> event attached directly to the DOM node
+          of the inner scrollable div.
         </p>
-        // remove this onWheel to fix janky scrolling!
-        <div style={scrollableDivStyle} /* onWheel={noop} */>
+        <div style={scrollableDivStyle} ref="scrollableDiv">
           <h2>I am scrollable!</h2>
           <ul>
-            {(times(50, i => (<li>List item #{i + 1}</li>)))}
+            {(times(50, i => (<li key={i}>List item #{i + 1}</li>)))}
           </ul>
         </div>
         <ul>
-          {(times(50, i => (<li>List item #{i + 1}</li>)))}
+          {(times(50, i => (<li key={i}>List item #{i + 1}</li>)))}
         </ul>
       </div>
     );
+  }
+  componentDidMount() {
+    ReactDOM.findDOMNode(this.refs.scrollableDiv).onwheel = () => console.log('yolo')
   }
 }
 

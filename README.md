@@ -1,3 +1,14 @@
+react-wheel-jank-demo
+====
+
+Demo of a React app that causes janky scrolling by attaching a `wheel` event to the entire document, even when it should
+only apply to a subsection of the page.
+
+
+
+Original `create-react-app` documentation follows
+----
+
 Below you will find some information on how to perform common tasks.  
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/template/README.md).
 
