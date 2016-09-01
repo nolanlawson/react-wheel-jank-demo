@@ -13,7 +13,7 @@ function wait(time) {
 }
 
 // jank up the main thread!
-setInterval(() => wait(1000), 2000)
+setInterval(() => wait(3000), 4000)
 
 var scrollableDivStyle = {
   width: 300,
