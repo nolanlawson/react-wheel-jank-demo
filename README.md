@@ -44,11 +44,11 @@ There are 3 branches: `v1`, `v2`, and `v3`, containing three different versions 
 2. React `onWheel` event on inner div ([Live version](https://nolanlawson.github.io/react-wheel-jank-demo/v2/))
 3. Vanilla DOM `wheel` event on inner div ([Live version](https://nolanlawson.github.io/react-wheel-jank-demo/v3/))
 
-Then to build the whole thing into the `docs/` folder, do:
+To build the whole thing into the `docs/` folder, do:
 
     npm run build-all
 
-Then to run a live demo and fiddle around with it, do:
+To run a live demo and fiddle around with it, do:
 
     npm start
 
