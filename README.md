@@ -18,7 +18,7 @@ Browser test results
 
 | | No wheel events | React `onWheel` on inner div | DOM `onwheel` on inner div |
 | --- | --- | --- | --- |
-| Inner div scrolls smoothly | ❌ | ❌ | ❌ |
+| Inner div scrolls smoothly | ✔ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ❌ |
 
 ### Firefox 48
@@ -32,7 +32,7 @@ Browser test results
 
 | | No wheel events | React `onWheel` on inner div | DOM `onwheel` on inner div |
 | --- | --- | --- | --- |
-| Inner div scrolls smoothly | ✔ | ❌ | ❌ |
+| Inner div scrolls smoothly | ❌ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ✔ |
 
 Original `create-react-app` documentation follows
