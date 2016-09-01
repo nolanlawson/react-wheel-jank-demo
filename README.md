@@ -18,7 +18,7 @@ Browser test results
 
 | | No wheel events | React `onWheel` on inner div | DOM `wheel` event on inner div |
 | --- | --- | --- | --- |
-| Inner div scrolls smoothly | ✔ | ❌ | ❌ |
+| Inner div scrolls smoothly | ❌ Mac / ✔ Win | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ❌ |
 
 ### Firefox 48
