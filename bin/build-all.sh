@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-for i in {1..3}; do 
+for i in {1..5}; do 
   git checkout v${i}
   npm run build
   ./node_modules/.bin/rimraf docs/v${i}
