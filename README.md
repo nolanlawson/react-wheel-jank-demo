@@ -35,6 +35,23 @@ Browser test results
 | Inner div scrolls smoothly | ❌ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ✔ |
 
+Build this app
+---
+
+There are 3 branches: `v1`, `v2`, and `v3`, containing three different versions of the app:
+
+1. No wheel events
+2. React `onWheel` event on inner div
+3. Vanilla DOM `onwheel` event on inner div
+
+Then to build the whole thing into the `docs/` folder, do:
+
+    npm run build-all
+
+Then to run a live demo and fiddle around with it, do:
+
+    npm start
+
 Original `create-react-app` documentation follows
 ----
 
