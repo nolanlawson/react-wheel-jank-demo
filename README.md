@@ -4,7 +4,36 @@ react-wheel-jank-demo
 Demo of a React app that causes janky scrolling by attaching a `wheel` event to the entire document, even when it should
 only apply to a subsection of the page.
 
+Browser test results
+----
 
+### Edge 14
+
+| | No wheel events | React `onWheel` on inner div | DOM `onwheel` on inner div |
+| --- | --- | --- | --- |
+| Inner div scrolls smoothly | ✔ | ❌ | ❌ |
+| Body scrolls smoothly |  ✔ | ❌ | ✔ |
+
+### Chrome 52
+
+| | No wheel events | React `onWheel` on inner div | DOM `onwheel` on inner div |
+| --- | --- | --- | --- |
+| Inner div scrolls smoothly | ❌ | ❌ | ❌ |
+| Body scrolls smoothly |  ✔ | ❌ | ❌ |
+
+### Firefox 48
+
+| | No wheel events | React `onWheel` on inner div | DOM `onwheel` on inner div |
+| --- | --- | --- | --- |
+| Inner div scrolls smoothly | ❌ | ❌ | ❌ |
+| Body scrolls smoothly |  ❌ | ❌ | ❌ |
+
+### Safari 10
+
+| | No wheel events | React `onWheel` on inner div | DOM `onwheel` on inner div |
+| --- | --- | --- | --- |
+| Inner div scrolls smoothly | ✔ | ❌ | ❌ |
+| Body scrolls smoothly |  ✔ | ❌ | ✔ |
 
 Original `create-react-app` documentation follows
 ----
