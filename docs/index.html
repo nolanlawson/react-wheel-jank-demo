@@ -10,13 +10,17 @@
       margin: 0 auto;
       padding: 50px;
     }
+    li {
+      line-height: 3em;
+      font-size: 2em;
+    }
   </style>
 </head>
 
 <body>
   <h1>React wheel jank demo</h1>
   Demo of React wheel jank caused by attaching a global <code>wheel</code> event listener to the document, even when we only
-  really need to liste on the <code>wheel</code> events for an inner div.
+  really need to listen on the <code>wheel</code> events for an inner div.
 
   <ul>
     <li><a href="./1/">Version 1: No wheel events at all</a></li>
