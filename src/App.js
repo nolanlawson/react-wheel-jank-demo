@@ -13,7 +13,7 @@ function wait(time) {
 }
 
 // jank up the main thread!
-setInterval(() => wait(1000), 2000)
+setInterval(() => wait(3000), 4000)
 
 var scrollableDivStyle = {
   width: 300,
@@ -31,12 +31,13 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>React Wheel Jank Demo</h2>
         </div>
-        <h3>Version 3</h3>
+        <h3>Version 2</h3>
         <p className="App-intro">
-          In this version, we have an <code>onwheel</code> event attached directly to the DOM node
-          of the inner scrollable div.
+          In this version, we have a React-style <code>onWheel</code> event only attached
+          to the inner div, but this also adds a global <code>wheel</code> event to the
+          whole document under the hood.
         </p>
-        <div style={scrollableDivStyle} ref="scrollableDiv">
+        <div style={scrollableDivStyle} ref="scrollableDiv" onWheel={noop}>
           <h2>I am scrollable!</h2>
           <ul>
             {(times(50, i => (<li key={i}>List item #{i + 1}</li>)))}
@@ -47,9 +48,6 @@ class App extends Component {
         </ul>
       </div>
     );
-  }
-  componentDidMount() {
-    ReactDOM.findDOMNode(this.refs.scrollableDiv).onwheel = noop
   }
 }
 
