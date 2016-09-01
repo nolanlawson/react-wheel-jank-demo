@@ -78,7 +78,7 @@ Test results
 Build this app
 ---
 
-There are 3 branches: `v1`, `v2`, and `v3`, containing three different versions of the app:
+There are multiple branches named `v1`, `v2`, etc., containing different versions of the app:
 
 1. No event listeners ([Live version](https://nolanlawson.github.io/react-wheel-jank-demo/v1/))
 2. React `onWheel` event on inner div ([Live version](https://nolanlawson.github.io/react-wheel-jank-demo/v2/))
