@@ -40,9 +40,9 @@ Build this app
 
 There are 3 branches: `v1`, `v2`, and `v3`, containing three different versions of the app:
 
-1. No wheel events
-2. React `onWheel` event on inner div
-3. Vanilla DOM `wheel` event on inner div
+1. No wheel events ([Live version](https://nolanlawson.github.io/react-wheel-jank-demo/v1/))
+2. React `onWheel` event on inner div ([Live version](https://nolanlawson.github.io/react-wheel-jank-demo/v2/))
+3. Vanilla DOM `wheel` event on inner div ([Live version](https://nolanlawson.github.io/react-wheel-jank-demo/v3/))
 
 Then to build the whole thing into the `docs/` folder, do:
 
