@@ -3,7 +3,7 @@
 for i in {1..3}; do 
   git checkout v${i}
   npm run build
-  ./node_modules/.bin/rimraf docs/${i}
-  ./node_modules/.bin/ncp build docs/${i}
+  ./node_modules/.bin/rimraf docs/v${i}
+  ./node_modules/.bin/ncp build docs/v${i}
 done
 git checkout master
