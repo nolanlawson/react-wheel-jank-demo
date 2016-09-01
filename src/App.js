@@ -49,7 +49,7 @@ class App extends Component {
     );
   }
   componentDidMount() {
-    ReactDOM.findDOMNode(this.refs.scrollableDiv).onwheel = () => console.log('yolo')
+    ReactDOM.findDOMNode(this.refs.scrollableDiv).onwheel = noop
   }
 }
 
