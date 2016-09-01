@@ -19,7 +19,8 @@ var scrollableDivStyle = {
   width: 300,
   height: 200,
   overflowY: 'auto',
-  margin: '0 auto'
+  margin: '0 auto',
+  background: '#ededed'
 };
 
 class App extends Component {
