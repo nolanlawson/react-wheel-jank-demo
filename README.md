@@ -8,6 +8,7 @@ You can reproduce this using a mouse with a scroll wheel, and then trying to scr
 the smaller scrollable div.
 
 Video demonstration in Edge 14: https://youtu.be/6Ckepx3wPPE
+React issue: https://github.com/facebook/react/issues/1254
 
 **Update:** added `touchstart` events too, so you can reproduce jankiness on mobile browsers as well.
 
