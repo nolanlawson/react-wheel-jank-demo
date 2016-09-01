@@ -21,5 +21,5 @@
   "eslintConfig": {
     "extends": "./node_modules/react-scripts/config/eslint.js"
   },
-  "homepage": "https://nolanlawson.github.io/react-wheel-jank-demo/3"
+  "homepage": "https://nolanlawson.github.io/react-wheel-jank-demo/v4"
 }
