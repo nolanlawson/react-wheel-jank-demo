@@ -9,28 +9,28 @@ Browser test results
 
 ### Edge 14
 
-| | No wheel events | React `onWheel` on inner div | DOM `onwheel` on inner div |
+| | No wheel events | React `onWheel` on inner div | `wheel` event on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ✔ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ✔ |
 
 ### Chrome 52
 
-| | No wheel events | React `onWheel` on inner div | DOM `onwheel` on inner div |
+| | No wheel events | React `onWheel` on inner div | `wheel` event on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ✔ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ❌ |
 
 ### Firefox 48
 
-| | No wheel events | React `onWheel` on inner div | DOM `onwheel` on inner div |
+| | No wheel events | React `onWheel` on inner div | `wheel` event on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ❌ | ❌ | ❌ |
 | Body scrolls smoothly |  ❌ | ❌ | ❌ |
 
 ### Safari 10
 
-| | No wheel events | React `onWheel` on inner div | DOM `onwheel` on inner div |
+| | No wheel events | React `onWheel` on inner div | `wheel` event on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ❌ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ✔ |
@@ -42,7 +42,7 @@ There are 3 branches: `v1`, `v2`, and `v3`, containing three different versions 
 
 1. No wheel events
 2. React `onWheel` event on inner div
-3. Vanilla DOM `onwheel` event on inner div
+3. Vanilla DOM `wheel` event on inner div
 
 Then to build the whole thing into the `docs/` folder, do:
 
