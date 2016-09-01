@@ -16,28 +16,28 @@ Test results: `wheel` event, mousewheel scrolling, desktop browsers
 
 ### Edge 14
 
-| | No wheel events | React `onWheel` on inner div | DOM `wheel` on inner div |
+| | No listeners | React `onWheel` on inner div | DOM `wheel` on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ✔ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ✔ |
 
 ### Chrome 52
 
-| | No wheel events | React `onWheel` on inner div | DOM `wheel` on inner div |
+| | No listeners | React `onWheel` on inner div | DOM `wheel` on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ❌ Mac / ✔ Win | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ❌ |
 
 ### Firefox 48
 
-| | No wheel events | React `onWheel` on inner div | DOM `wheel` on inner div |
+| | No listeners | React `onWheel` on inner div | DOM `wheel` on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ❌ | ❌ | ❌ |
 | Body scrolls smoothly |  ❌ | ❌ | ❌ |
 
 ### Safari 10
 
-| | No wheel events | React `onWheel` on inner div | DOM `wheel` on inner div |
+| | No listeners | React `onWheel` on inner div | DOM `wheel` on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ❌ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ✔ |
@@ -47,28 +47,28 @@ Test results: `touchstart` event, touch scrolling, mobile browsers
 
 ### Edge 14 Mobile
 
-| | No touch events | React `onTouchStart` on inner div | DOM `touchstart` on inner div |
+| | No listeners | React `onTouchStart` on inner div | DOM `touchstart` on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ✔ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ✔ |
 
 ### Chrome 52, Android 7
 
-| | No touch events | React `onTouchStart` on inner div | DOM `touchstart` on inner div |
+| | No listeners | React `onTouchStart` on inner div | DOM `touchstart` on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ✔ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ✔ |
 
 ### Firefox 48
 
-| | No touch events | React `onTouchStart` on inner div | DOM `touchstart` on inner div |
+| | No listeners | React `onTouchStart` on inner div | DOM `touchstart` on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ✔ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ✔ |
 
 ### Safari on iOS 9
 
-| | No touch events | React `onTouchStart` on inner div | DOM `touchstart` on inner div |
+| | No listeners | React `onTouchStart` on inner div | DOM `touchstart` on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ❌ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ✔ |
@@ -78,7 +78,7 @@ Build this app
 
 There are 3 branches: `v1`, `v2`, and `v3`, containing three different versions of the app:
 
-1. No wheel events ([Live version](https://nolanlawson.github.io/react-wheel-jank-demo/v1/))
+1. No event listeners ([Live version](https://nolanlawson.github.io/react-wheel-jank-demo/v1/))
 2. React `onWheel` event on inner div ([Live version](https://nolanlawson.github.io/react-wheel-jank-demo/v2/))
 3. Vanilla DOM `wheel` event on inner div ([Live version](https://nolanlawson.github.io/react-wheel-jank-demo/v3/))
 4. React `onTouchStart` event on inner div ([Live version](https://nolanlawson.github.io/react-wheel-jank-demo/v4/))
