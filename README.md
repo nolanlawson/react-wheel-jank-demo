@@ -11,62 +11,63 @@ Video demonstration in Edge 14: https://youtu.be/6Ckepx3wPPE
 
 **Update:** added `touchstart` events too, so you can reproduce jankiness on mobile browsers as well.
 
-Test results: `wheel` event, mousewheel scrolling, desktop browsers
+Test results
 ----
 
-### Edge 14
+### Test 1: `wheel` event, mousewheel scrolling, desktop browsers
+
+#### Edge 14
 
 | | No listeners | React `onWheel` on inner div | DOM `wheel` on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ✔ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ✔ |
 
-### Chrome 52
+#### Chrome 52
 
 | | No listeners | React `onWheel` on inner div | DOM `wheel` on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ❌ Mac / ✔ Win | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ❌ |
 
-### Firefox 48
+#### Firefox 48
 
 | | No listeners | React `onWheel` on inner div | DOM `wheel` on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ❌ | ❌ | ❌ |
 | Body scrolls smoothly |  ❌ | ❌ | ❌ |
 
-### Safari 10
+#### Safari 10
 
 | | No listeners | React `onWheel` on inner div | DOM `wheel` on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ❌ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ✔ |
 
-Test results: `touchstart` event, touch scrolling, mobile browsers
-----
+### Test 2: `touchstart` event, touch scrolling, mobile browsers
 
-### Edge 14 Mobile
-
-| | No listeners | React `onTouchStart` on inner div | DOM `touchstart` on inner div |
-| --- | --- | --- | --- |
-| Inner div scrolls smoothly | ✔ | ❌ | ❌ |
-| Body scrolls smoothly |  ✔ | ❌ | ✔ |
-
-### Chrome 52, Android 7
+#### Edge 14 Mobile
 
 | | No listeners | React `onTouchStart` on inner div | DOM `touchstart` on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ✔ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ✔ |
 
-### Firefox 48
+#### Chrome 52, Android 7
 
 | | No listeners | React `onTouchStart` on inner div | DOM `touchstart` on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ✔ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ✔ |
 
-### Safari on iOS 9
+#### Firefox 48
+
+| | No listeners | React `onTouchStart` on inner div | DOM `touchstart` on inner div |
+| --- | --- | --- | --- |
+| Inner div scrolls smoothly | ✔ | ❌ | ❌ |
+| Body scrolls smoothly |  ✔ | ❌ | ✔ |
+
+#### Safari on iOS 9
 
 | | No listeners | React `onTouchStart` on inner div | DOM `touchstart` on inner div |
 | --- | --- | --- | --- |
