@@ -9,7 +9,9 @@ the smaller scrollable div.
 
 Video demonstration in Edge 14: https://youtu.be/6Ckepx3wPPE
 
-Browser test results
+**Update:** added `touchstart` events too, so you can reproduce jankiness on mobile browsers as well.
+
+Test results: `wheel` event, mousewheel scrolling, desktop browsers
 ----
 
 ### Edge 14
@@ -36,6 +38,37 @@ Browser test results
 ### Safari 10
 
 | | No wheel events | React `onWheel` on inner div | DOM `wheel` event on inner div |
+| --- | --- | --- | --- |
+| Inner div scrolls smoothly | ❌ | ❌ | ❌ |
+| Body scrolls smoothly |  ✔ | ❌ | ✔ |
+
+Test results: `touchstart` event, touch scrolling, mobile browsers
+----
+
+### Edge 14 Mobile
+
+| | No touch events | React `onTouchStart` on inner div | DOM `touchstart` event on inner div |
+| --- | --- | --- | --- |
+| Inner div scrolls smoothly | ✔ | ❌ | ❌ |
+| Body scrolls smoothly |  ✔ | ❌ | ✔ |
+
+### Chrome 52, Android 7
+
+| | No touch events | React `onTouchStart` on inner div | DOM `touchstart` event on inner div |
+| --- | --- | --- | --- |
+| Inner div scrolls smoothly | ✔ | ❌ | ❌ |
+| Body scrolls smoothly |  ✔ | ❌ | ✔ |
+
+### Firefox 48
+
+| | No touch events | React `onTouchStart` on inner div | DOM `touchstart` event on inner div |
+| --- | --- | --- | --- |
+| Inner div scrolls smoothly | ✔ | ❌ | ❌ |
+| Body scrolls smoothly |  ✔ | ❌ | ✔ |
+
+### Safari on iOS 9
+
+| | No touch events | React `onTouchStart` on inner div | DOM `touchstart` event on inner div |
 | --- | --- | --- | --- |
 | Inner div scrolls smoothly | ❌ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ✔ |
