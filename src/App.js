@@ -13,7 +13,7 @@ function wait(time) {
 }
 
 // jank up the main thread!
-setInterval(() => wait(1000), 2000)
+setInterval(() => wait(3000), 4000)
 
 var scrollableDivStyle = {
   width: 300,
@@ -23,6 +23,12 @@ var scrollableDivStyle = {
   background: '#ededed'
 };
 
+function doSuspiciousPreventDefault (e) {
+  if (1 === 0) { // will never happen
+    e.preventDefault();
+  }
+}
+
 class App extends Component {
   render() {
     return (
@@ -31,10 +37,11 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>React Wheel Jank Demo</h2>
         </div>
-        <h3>Version 3</h3>
+        <h3>Version 5</h3>
         <p className="App-intro">
-          In this version, we have an <code>onwheel</code> event attached directly to the DOM node
-          of the inner scrollable div.
+          In this version, we have a vanilla DOM <code>touchstart</code> event on the scrollable div,
+          which contains a supicious <code>e.preventDefault()</code> (wrapped in an <code>if (false) {}</code>, but enough
+          to spook the browser).
         </p>
         <div style={scrollableDivStyle} ref="scrollableDiv">
           <h2>I am scrollable!</h2>
@@ -49,7 +56,7 @@ class App extends Component {
     );
   }
   componentDidMount() {
-    ReactDOM.findDOMNode(this.refs.scrollableDiv).onwheel = noop
+    ReactDOM.findDOMNode(this.refs.scrollableDiv).ontouchstart = doSuspiciousPreventDefault
   }
 }
 
