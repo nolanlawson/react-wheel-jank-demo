@@ -38,6 +38,13 @@ Test results
 | Inner div scrolls smoothly | ❌ | ❌ | ❌ |
 | Body scrolls smoothly |  ❌ | ❌ | ❌ |
 
+#### Firefox Dev Edition 50 w/ e10s (Mac)
+
+| | No listeners | React `onWheel` on inner div | DOM `wheel` on inner div |
+| --- | --- | --- | --- |
+| Inner div scrolls smoothly | ✔ | ❌ | ❌ |
+| Body scrolls smoothly |  ✔ | ❌ | ✔ |
+
 #### Safari 10
 
 | | No listeners | React `onWheel` on inner div | DOM `wheel` on inner div |
