@@ -4,6 +4,11 @@ react-wheel-jank-demo
 Demo of a React app that causes janky scrolling by attaching a `wheel` event to the entire document, even when it should
 only apply to a subsection of the page.
 
+You can reproduce this using a mouse with a scroll wheel, and then trying to scroll on the entire document as well as within
+the smaller scrollable div.
+
+Video demonstration in Edge 14: https://youtu.be/6Ckepx3wPPE
+
 Browser test results
 ----
 
