@@ -46,7 +46,7 @@ Test results
 
 ### Test 2: `touchstart` event, touch scrolling, mobile browsers
 
-#### Edge 14 Mobile
+#### Edge 14 Mobile, Windows 10
 
 | | No listeners | React `onTouchStart` on inner div | DOM `touchstart` on inner div |
 | --- | --- | --- | --- |
@@ -60,7 +60,7 @@ Test results
 | Inner div scrolls smoothly | ✔ | ❌ | ❌ |
 | Body scrolls smoothly |  ✔ | ❌ | ✔ |
 
-#### Firefox 48
+#### Firefox 48, Android 7
 
 | | No listeners | React `onTouchStart` on inner div | DOM `touchstart` on inner div |
 | --- | --- | --- | --- |
